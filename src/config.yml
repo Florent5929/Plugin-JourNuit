@@ -1,0 +1,13 @@
+# Pour rallonger le temps, mettez de préférence un multiple de 600 secondes (10 minutes) pour le jour,
+# un multiple de 420 secondes (7 minutes) pour la nuit, un multiple de 50 secondes pour l'aube,
+# et un multiple de 125 secondes pour le crépuscule.
+# Sinon ce sera arrondi et vous n'aurez pas le temps exact.
+# Mettre GarderPhaseLune à true est recommandé si vous n'avez pas de texture pack pour la lune.
+# Cela évitera que la phase de la lune change si vous rallongez la nuit, ou du moins ce sera moins visible.
+# Si vous avez un texture pack qui met une seule phase pour la lune, il est recommandé de mettre GarderPhaseLune à false.
+MondePrincipal: "World"
+DureeJourEnSecondes: 7200
+DureeNuitEnSecondes: 7200
+DureeAubeEnSecondes: 10
+DureeCrepusculeEnSecondes: 10
+GarderPhaseLune: false

@@ -1,0 +1,12 @@
+name: fr_Florent59_JourNuit
+main: fr.Florent59.JourNuit.Main
+version: 1.12.2
+description: Permet de parametrer la duree du jour, de la nuit, de l'aube et du crepuscule.
+author: Florent59
+commands:
+ setWorld:
+  description: Definit le monde principal sur lequel doit s'appliquer le plugin JourNuit. (ex, setWorld World)
+  permission: op
+ set:
+  description: Definit la duree du jour ou de la nuit, en secondes. (ex, set day 200)
+  permission: op
