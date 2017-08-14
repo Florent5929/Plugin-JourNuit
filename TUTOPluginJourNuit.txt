@@ -1,0 +1,33 @@
+Tutoriel d'utilisation du plugin JourNuit :
+
+Description du plugin :
+Ce plugin permet de paramétrer indépendamment la durée du jour, de la nuit, de l'aube et du crépuscule.
+Il agit sur le monde qui lui est renseigné.
+
+Configuration par défaut :
+
+MondePrincipal: "World"
+DureeJourEnSecondes: 7200
+DureeNuitEnSecondes: 7200
+DureeAubeEnSecondes: 10
+DureeCrepusculeEnSecondes: 10
+GarderPhaseLune: false
+
+Pour rallonger le temps, mettez de préférence un multiple de 600 secondes (10 minutes) pour le jour, un multiple de 420 secondes (7 minutes) pour la nuit, 
+un multiple de 50 secondes pour l'aube, et un multiple de 125 secondes pour le crépuscule.
+Sinon ce sera arrondi et vous n'aurez pas le temps exact.
+Mettre GarderPhaseLune à true est recommandé si vous n'avez pas de texture pack qui définit une seule phase lunaire.
+Cela évitera que la phase de la lune change si vous rallongez la nuit, ou du moins ce sera moins visible.
+Si vous avez un texture pack qui met une seule phase pour la lune, il est recommandé de mettre GarderPhaseLune à false.
+
+Commandes :
+(Nécessitent toutes d'être opérateur) :
+
+/setWorld <NomDuMondePrincipal>
+Met à jour le monde principal dans la configuration.
+
+/set <day|night|aube|crepuscule> <nbSecondes>
+Met à jour la durée de la phase indiquée. Exemple : /set day 1200 mettra le jour à 1200 secondes.
+
+Si votre jour dure 2h, les précipitations seront 12 fois plus fréquentes que si ça durait les 10 minutes normales.
+C'est pourquoi il est recommandé d'utiliser le plugin Weather en plus du plugin JourNuit.
